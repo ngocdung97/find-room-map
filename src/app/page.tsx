@@ -1,29 +1,14 @@
 // components
 import { Navbar, Footer } from "@/components";
-
-// sections
-import Hero from "./hero";
-import OutImpressiveStats from "./out-impressive-stats";
-import CoursesCategories from "./courses-categories";
-import ExploreCourses from "./explore-courses";
-import Testimonial from "./testimonial";
-import Events from "./events";
-import StudentsFeedback from "./students-feedback";
-import TrustedCompany from "./trusted-companies";
+import Map from "@/components/map";
 
 export default function Campaign() {
   return (
-    <>
+    <div className="h-screen w-screen overflow-hidden">
       <Navbar />
-      <Hero />
-      <OutImpressiveStats />
-      <CoursesCategories />
-      <ExploreCourses />
-      <Testimonial />
-      <Events />
-      <StudentsFeedback />
-      <TrustedCompany />
-      <Footer />
-    </>
+      <div className="md:p-6 lg:p-6 w-full h-full">
+        <Map />
+      </div>
+    </div>
   );
 }
